@@ -140,12 +140,7 @@ h4
 .content {
    position: relative;
 }
-li
-{
-   width: 100px;
-   height: 100px;
-   padding: 10;
-}
+
 .cart-page
 {
    margin: 80px auto;
@@ -203,6 +198,32 @@ td:last-child{
 th:last-child{
    text-align: right;
 }
+.apparel-container{
+   color: white; display: flex;
+}
+.apparel-picker{
+   display: inline-block;
+}
+.apparel-picker ul{
+   list-style: none;
+   margin: 0 auto;
+}
+.apparel-picker li
+{
+   width: 100px;
+   height: 100px;
+   padding: 10;
+}
+
+.apparel-bigImage
+{
+   display: inline-block;
+   width: 100%;
+}
+.apparel-description
+{
+   display: inline-block; width: 40%; margin-right: 0; margin-left: auto; padding: 10px
+}
 .removeButton
 {
 
@@ -224,7 +245,7 @@ th:last-child{
 
 }
 .originalPrice{
-
+   
 }
 button{
   background-color:yellow;
@@ -233,3 +254,31 @@ button{
 button:hover{background-color:orange;}
 
 button:focus{background-color:red;}
+
+@media only screen and (max-width: 600px){
+   .apparel-container
+   {
+      display: block;
+   }
+   .apparel-picker
+   {
+      display: inline-block;
+      width: 100%;
+   }
+   .apparel-picker li
+   {
+      display: inline-block;
+      width: 15%;
+      height: 100px;
+   }
+
+   .apparel-description
+   {
+      display: block; width: 100%; margin-right: 0; margin-left: auto; padding: 10px
+   }
+   .apparel-bigImage{
+      display: block;
+      width: 100%;
+
+   }
+}
