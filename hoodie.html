@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="styles.css">
-   <title>joggers</title>
+   <title>snapback</title>
    <script>
       function changePhoto(url) {
          document.getElementById("mainPhoto").src = url;
@@ -35,51 +35,38 @@
 
    <div class="apparel-container">
       <div class="apparel-picker">
-         <ul>
+         <ul >
             <li>
-               <a href="#" onclick="changePhoto('images/joggers.jpeg')">
-                  <img src="images/joggers.jpeg" alt="Don in a Tshirt"
+               <a href="#" onclick="changePhoto('images/snapback.jpg')">
+                  <img src="images/snapback.jpg" alt="black snapback"
                   style="object-fit: cover; height: 100%; width: 100%;">
-                  </a>
-            </li>
-            <li>
-               <a href="#" onclick="changePhoto('images/joggersFront.jpeg')">
-                  <img src="images/joggersFront.jpeg" alt="Alyza in a Tshirt"
-                  style="object-fit: cover; width: 100%; height: 100%; ">
                </a>
             </li>
             <li>
-               <a href="#" onclick="changePhoto('images/donJoggers.jpg')">
-                  <img src="images/donJoggers.jpg" alt="Navy blue tshirt"
-                  style="object-fit: cover; width: 100%; height: 100%;">
+               <a href="#" onclick="changePhoto('images/purpleSnapback.jpg')">
+                  <img src="images/purpleSnapback.jpg" alt="purple snapback"
+                  style="object-fit: cover; width: 100%; height: 100%; ">
                </a>
             </li>
          </ul>
       </div>
       <div class="apparel-bigImage">
-         <img src="images/joggers.jpeg" alt="donTshirt" style="width: 100%;" id="mainPhoto">
+         <img src="images/snapback.jpg" alt="black snapback" style="width: 100%;" id="mainPhoto">
       </div>
       <div class="apparel-description">
-         <h3>THEdon Joggers</h3>
-         <p style="text-align: left;">Putting on these joggers makes you faster than a Roze Skin wielding Kali Sticks while Stim-Shotting to A-Bomb with Double Time Equipped and Dead Silence Activated.
-            <br>
-            <br>
-            Only Available in black
+         <h1>THE TD543 Snapback</h1>
+         <p style="text-align: left;">The Hat that INSTANTLY DOUBLES Your K/D...
          </p>
          <h4 style="text-align: left;">Choose a variant:</h4>
          <div style="display: flex; ">
-            
-            <select name="size" id="size" style="display: inline-block;">
-               <option value="small">Small</option>
-               <option value="medium">Medium</option>
-               <option value="large">Large</option>
-               <option value="extralarge">XL</option>
+            <select name="color" id="color" style="display: inline-block;">
+               <option value="black">Black</option>
+               <option value="purple">Purple</option>
             </select>
-            
          </div>
+         <h3>$19.99</h3>
          <div style="text-align: center;">
-            <h3>$34.99</h3>
-            <button style="text-align: center" onclick="createJoggerCartItem('images/joggers.jpeg', '34.99', 'joggers')">Add To Cart</button>
+            <button onclick="createSnapbackCartItem('images/snapback.jpg', '19.99', 'snapback')">Add To Cart</button>
          </div>
 
       </div>
