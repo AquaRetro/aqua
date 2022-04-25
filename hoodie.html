@@ -5,8 +5,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="styles.css">
-   <title>hoodie</title>
-   <script >
+   <title>joggers</title>
+   <script>
       function changePhoto(url) {
          document.getElementById("mainPhoto").src = url;
       }
@@ -37,72 +37,49 @@
       <div class="apparel-picker">
          <ul>
             <li>
-               <a href="#" onclick="changePhoto('images/hoodie.jpg')">
-                  <img src="images/hoodie.jpg" alt="Don in a Tshirt"
+               <a href="#" onclick="changePhoto('images/joggers.jpeg')">
+                  <img src="images/joggers.jpeg" alt="Don in a Tshirt"
                   style="object-fit: cover; height: 100%; width: 100%;">
-               </a>
+                  </a>
             </li>
             <li>
-               <a href="#" onclick="changePhoto('images/purpleHoodie.jpeg')">
-                  <img src="images/purpleHoodie.jpeg" alt="Alyza in a Tshirt"
+               <a href="#" onclick="changePhoto('images/joggersFront.jpeg')">
+                  <img src="images/joggersFront.jpeg" alt="Alyza in a Tshirt"
                   style="object-fit: cover; width: 100%; height: 100%; ">
                </a>
             </li>
             <li>
-               <a href="#" onclick="changePhoto('images/alyzaHoodie.jpg')">
-                  <img src="images/alyzaHoodie.jpg" alt="Navy blue tshirt"
-                  style="object-fit: cover; width: 100%; height: 100%;">
-               </a>
-            </li>
-            <li>
-               <a href="#" onclick="changePhoto('images/alyzaHoodieJoggers.jpg')">
-                  <img src="images/alyzaHoodieJoggers.jpg" alt="light blue tshirt"
-                  style="object-fit: cover; width: 100%; height: 100%;">
-               </a>
-            </li>
-            <li>
-               <a href="#" onclick="changePhoto('images/donHoodie.jpg')">
-                  <img src="images/donHoodie.jpg" alt="koda in a tshirt"
+               <a href="#" onclick="changePhoto('images/donJoggers.jpg')">
+                  <img src="images/donJoggers.jpg" alt="Navy blue tshirt"
                   style="object-fit: cover; width: 100%; height: 100%;">
                </a>
             </li>
          </ul>
       </div>
       <div class="apparel-bigImage">
-         <img src="images/hoodie.jpg" alt="donTshirt" style="width: 100%;" id="mainPhoto">
+         <img src="images/joggers.jpeg" alt="donTshirt" style="width: 100%;" id="mainPhoto">
       </div>
       <div class="apparel-description">
-         <h3>THEdon Hoodie</h3>
-         <p style="text-align: left; " >This Hoodie is so comfortable it will keep you relaxed even under heavy RPG fire.
+         <h3>THEdon Joggers</h3>
+         <p style="text-align: left;">Putting on these joggers makes you faster than a Roze Skin wielding Kali Sticks while Stim-Shotting to A-Bomb with Double Time Equipped and Dead Silence Activated.
             <br>
-            Comes in black or purple
+            <br>
+            Only Available in black
          </p>
-         <h4 style="text-align: left;">Choose a variant</h4>
+         <h4 style="text-align: left;">Choose a variant:</h4>
          <div style="display: flex; ">
-            <select name="color" id="color" style="display: inline-block;">
-               <option value="black">Black</option>
-               <option value="purple">Purple</option>
-            </select>
+            
             <select name="size" id="size" style="display: inline-block;">
                <option value="small">Small</option>
                <option value="medium">Medium</option>
                <option value="large">Large</option>
                <option value="extralarge">XL</option>
             </select>
-            <select name="logodesign" id="logodesign" style="display: inline-block;">
-               <option value="FCP">Full Color Print</option>
-               <option value="green">Green</option>
-               <option value="metal">Metal</option>
-               <option value="PG">Pink Glitter</option>
-               <option value="purple">Purple</option>
-               <option value="red">Red</option>
-               <option value="yellow">Yellow</option>
-               <option value="BG">Blue Glitter</option>
-            </select>
+            
          </div>
          <div style="text-align: center;">
-            <h3>Starting at $34.99</h3>
-            <button style="text-align: center" onclick="createCartItem('images/hoodie.jpg', '34.99', 'hoodie')">Add To Cart</button>
+            <h3>$34.99</h3>
+            <button style="text-align: center" onclick="createJoggerCartItem('images/joggers.jpeg', '34.99', 'joggers')">Add To Cart</button>
          </div>
 
       </div>
