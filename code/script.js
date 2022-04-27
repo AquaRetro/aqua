@@ -26,7 +26,7 @@ function checkValues(imgSrc, theType)
    const logoDesignGetter = document.getElementById('logodesign') 
    const logoDesign = logoDesignGetter.options[logoDesignGetter.selectedIndex].text
    const cartButton = document.getElementsByClassName("cart-button")[0]
-   const selectParagraph = document.getElementsByClassName[0]('select-another')[0]
+   const selectParagraph = document.getElementsByClassName('select-another')[0]
    if (color != "" && size != "" && logoDesign != "")
    {
       cartButton.setAttribute('style', 'animation: bounce 1s')
