@@ -36,11 +36,11 @@ paypal.Buttons({
    },
    onApprove: function(data, actions){
       return actions.order.capture().then(function(details){
-         window.location.replace('http://127.0.0.1:5500/success.html')
+         window.location.replace('https://aquaretro.github.io/aqua/code/success.html')
          
       })
    },
    onCancel: function(data){
-      window.location.replace('http://127.0.0.1:5500/cancel.html')
+      window.location.replace('https://aquaretro.github.io/aqua/code/cancel.html')
    }
 }).render('#paypal-payment-button');
